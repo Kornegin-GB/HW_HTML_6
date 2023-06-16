@@ -223,7 +223,7 @@ a {
    background: #F26376;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
    .center {
       padding-left: calc(50% - 368px);
       padding-right: calc(50% - 368px);
@@ -261,10 +261,14 @@ a {
 
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 768px) {
    .center {
       padding-left: calc(50% - 160px);
       padding-right: calc(50% - 160px);
+   }
+
+   .header {
+      gap: 0px;
    }
 
    .left-nav {
@@ -273,10 +277,6 @@ a {
 
    .right-nav {
       padding-right: 8px;
-      gap: 0px;
-   }
-
-   .header {
       gap: 0px;
    }
 
@@ -329,7 +329,6 @@ a {
 
    .products-wrap {
       grid-template-columns: repeat(1, 319px);
-      gap: 16px;
    }
 
    .produt-info {
